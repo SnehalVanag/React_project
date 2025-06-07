@@ -1,0 +1,45 @@
+/* SimplePopup.css */
+
+.popup-overlay {
+  position: fixed; /* Stays in the same position even if page scrolls */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  z-index: 1000; /* Make sure it appears on top of other content */
+}
+
+.popup-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+  text-align: center;
+  max-width: 400px; /* Limit the width */
+  width: 90%; /* Responsive width */
+}
+
+.popup-content p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.popup-close-btn {
+  background-color: #007bff; /* Blue button */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.popup-close-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
